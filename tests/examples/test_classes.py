@@ -1,6 +1,6 @@
 import pytest
 
-from boilerplate.examples import Person
+from evictions.examples import Person
 
 
 class TestPerson:
