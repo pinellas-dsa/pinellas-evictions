@@ -3,7 +3,6 @@ from pathlib import Path
 import pandas as pd
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
@@ -13,10 +12,8 @@ from evictions.scraper.searchpage import SearchPage
 from evictions.scraper.tablepage import TablePage
 from evictions.utils.date_utils import find_last_day_of_month
 
-
 # chrome_options = Options()
 # chrome_options.add_experimental_option("detach", True)
-
 
 if __name__ == "__main__":
     query_path = Path.cwd() / "src" / "evictions" / "query.yaml"

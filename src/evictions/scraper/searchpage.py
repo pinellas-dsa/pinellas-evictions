@@ -5,7 +5,7 @@ from evictions.resources.locators import Locators
 
 
 class SearchPage(BasePage):
-    """Navigates the search page of CCMSPA, in which the user selects search parameters including:
+    """Navigates the search page of CCMSPA, in which the user selects search parameters:
 
     - start date
     - end date
@@ -25,16 +25,18 @@ class SearchPage(BasePage):
         self.select_case_type(case_type)
         self.click_search_submit()
 
-    def select_search_by_date(self):
+    def select_search_by_date(self) -> None:
+        """Finds the radio button selector on the search page
+        and chooses the option specified in the query.yaml file
+        """
         radio_list = self.driver.find_elements(
             *Locators.SEARCH_BY_RADIO_BUTTONS_ID
         )
-
         for rbutton in radio_list:
             rbutton_t = rbutton.get_attribute("id")
             if (
                 rbutton_t == Locators.DATE_FILED_BUTTON_ID
-            ):  # value will be "DateFiled"
+            ):  # value will usually be "DateFiled"
                 rbutton.click()
                 break
 
@@ -49,8 +51,9 @@ class SearchPage(BasePage):
         self.enter_text(Locators.DATE_ON_OR_AFTER_ID, start_date)
         self.enter_text(Locators.DATE_ON_OR_BEFORE_ID, end_date)
 
-    def select_case_type(self, case_type: str):
-        """_summary_
+    def select_case_type(self, case_type: str) -> None:
+        """Finds the dropdown with all the case types and selects the
+        one specified in the query.yaml file.
 
         Args:
             case_type (str): _description_
@@ -60,5 +63,6 @@ class SearchPage(BasePage):
         )
         dropdown.select_by_visible_text(case_type)
 
-    def click_search_submit(self):
+    def click_search_submit(self) -> None:
+        """Simply clicks the sumbit button"""
         self.click(Locators.SUBMIT_BUTTON_ID)
