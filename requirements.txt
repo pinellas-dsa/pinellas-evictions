@@ -6,6 +6,7 @@ flake8~=3.9.2
 pylint~=2.8.3
 tox~=3.25.0
 pytest~=6.2.4
+pyyaml~=6.0
 mypy~=0.950
 safety~=1.10.3
 liccheck~=0.6.0

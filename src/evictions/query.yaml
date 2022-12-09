@@ -1,0 +1,7 @@
+# date of the earliest record to pull
+start_date: "1/1/2022"
+# date of the latest record to pull
+end_date: "12/31/2022"
+year: 2022
+# case type to pull
+case_type: "DELINQUENT TENANT/EVICTION/UNLAWFUL DETAINER"
