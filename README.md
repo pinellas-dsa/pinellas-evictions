@@ -1,4 +1,4 @@
-# Python Boilerplate
+# Pinellas County Evictions Scraper
 
 <details open="open">
 <summary>Table of Contents</summary>
@@ -12,7 +12,7 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-  - [This Template](#this-template)
+  - [This Template](#Basics)
   - [{Use Case 1}](#use-case-1)
 - [Contributing](#contributing)
 - [License](#license)
@@ -25,9 +25,8 @@
 
 ## About this Project
 
-<!-- TODO: Replace with a brief description of your own project -->
+The Pinellas County Evictions scraper allows the user to count evictions and understand eviction trends using data from the website of the Pinellas County Clerk of the Circuit Court.
 
-Python Boilerplate provides a common file structure for a Python project and encourages best practices in python development, including some simple code quality checks set up and some idiomatic examples of python data strctures and functions. This project is a template that can be used as a foundation for future projects.
 
 ### Made With
 
@@ -45,13 +44,12 @@ Python Boilerplate provides a common file structure for a Python project and enc
 - [Architecture Decision Records](docs/adrs)
 - [Project Scoping Document](docs/project-scope.md)
 - [Data Dictionary](docs/data-dictionary.md)
-- ... <!-- other relevant documents should be added to the docs/ directory and linked here -->
 
 ## Getting Started
 
 ### Prerequisites
 
-- Python installed on your local machine, preferably a version between 3.7 and 3.9
+- Python installed on your local machine, preferably a version between 3.9 and 3.10. (Built on 3.9.5)
 
 In order to check which version of python you have installed, run the following in your command line, and the output should look something like this:
 
@@ -66,8 +64,8 @@ If you receive an error message, or the version of python you have installed is 
 
 ### Installation
 
-1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) on your local machine: `git clone https://github.com/widal001/python-boilerplate.git`
-1. Change directory into the cloned project: `cd python-boilerplate`
+1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) on your local machine: `git clone https://github.com/pinellas-dsa/pinellas-evictions`
+1. Change directory into the cloned project: `cd pinellas-evictions`
 1. Create a new virtual environment: `python -m venv env`
 1. Activate the virtual environment
    - On Mac/Linux: `source env/bin/activate`
