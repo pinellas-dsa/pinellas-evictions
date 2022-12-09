@@ -1,1 +1,1 @@
-from boilerplate.examples.classes import Person
+from evictions.examples.classes import Person

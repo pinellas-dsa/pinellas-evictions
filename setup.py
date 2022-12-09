@@ -1,4 +1,4 @@
-"""Setup script for boilerplate package."""
+"""Setup script for evictions package."""
 import os
 
 from setuptools import find_packages
